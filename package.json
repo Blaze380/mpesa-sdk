@@ -1,0 +1,60 @@
+{
+  "name": "mpesa-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "module",
+  "description": "A Typescript and NodeJs library wrapper for M-pesa Api",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon",
+    "build:1": "tsc",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaze380/mpesa-sdk.git"
+  },
+  "keywords": [
+    "M-Pesa",
+    "mpesa",
+    "M-pesa gateway",
+    "M-pesa online payment",
+    "Pagamento online Mpesa"
+  ],
+  "author": "gabriel.niuro@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/blaze380/mpesa-sdk",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "dependencies": {
+    "constants": "^0.0.2",
+    "cross-fetch": "^4.1.0",
+    "crypto": "^1.0.1"
+  },
+  "files": [
+    "/dist",
+    "README.md",
+    "package.json"
+  ]
+}
