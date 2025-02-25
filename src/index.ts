@@ -1,1 +1,1 @@
-export { MpesaClient } from "./mpesa-client";
+export { MpesaClient } from './mpesa-client';
